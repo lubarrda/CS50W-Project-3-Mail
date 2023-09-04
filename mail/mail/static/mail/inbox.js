@@ -70,9 +70,11 @@ function link_email(id) {
         body: JSON.stringify({
             archived: !email.archived
         })
-      })    
+      })
+      .then(() => {load_mailbox ('inbox')})      
     });
     document.querySelector('#emails-link-view').append(btn_arcv);
+    
 
     // Reply
     const btn_reply = document.createElement('button');
@@ -121,7 +123,7 @@ function load_mailbox(mailbox) {
         
           <h2> Sender: ${sentEmail.sender} </h2>
           <h4> Subject: ${sentEmail.subject} </h4>
-          <h4> Message : ${sentEmail.body} </h4>
+          <h3>  ${sentEmail.timestamp} </h3>
         `;
 
        

@@ -4,19 +4,22 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
-    background-color: #213D12; /* dark jungle green as the background */
-    color: #E5E5E5; /* a light color for the text */
+    background-color: #213D12; 
+    color: #E5E5E5; 
 }
 
 /* Styles for headers */
 h2, h3 {
-    color: #DAA520; /* golden color to highlight headers */
-    border-bottom: 2px solid #DAA520;
+    color: black; /* golden color to highlight headers */
+    border-bottom: 2px solid black;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
-/* Button styles to make them look like leaves */
+h4 {
+    color: black
+}
+
 .btn-outline-primary {
     border-color: #DAA520;
     color: #DAA520;
@@ -56,7 +59,7 @@ textarea {
 
 /* Styles to distinguish between read and unread emails */
 .read {
-    background-color: lightgrey;
+    background-color: darkgray;
 }
 
 .unread {
